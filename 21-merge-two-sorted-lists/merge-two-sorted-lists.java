@@ -25,8 +25,8 @@ class Solution {
             }
             current = current.next;
         }
-        if (l1 != null) current.next = l1;
-        if (l2 != null) current.next = l2;
+        if (l1 == null) current.next = l2;
+        if (l2 == null) current.next = l1;
 
         return dummy.next; 
     }
